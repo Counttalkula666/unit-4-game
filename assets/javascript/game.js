@@ -32,19 +32,22 @@ function lowrandomnumber() {
     console.log(lowrandomnumber())
 }
 
+//here is my user guesses counter
 var targetNumber = function counter(){
 $("#number-to-guess").text(targetNumber);
 }
 
+
 //update wins before writing it
-if (counter === compPick) {
+if (counter === compPick()) {
     alert("You win!");
+    //increase counter
   }
-//increase counter
-else if (counter >= compPick) {
+
+else if (counter >= compPick()) {
     alert("You lose!!");
+    //increase counter
   }
-//increase counter
 
 //Have a refresh button function below...need to link it to the button I created
 function createRefreshButton(){
