@@ -1,0 +1,19 @@
+
+
+h1 {
+    font-size: 60px;
+    color: rgb(135, 53, 173);
+    text-align: center;
+    line-height: 1.8;
+    text-shadow: 2px 1px rgb(26, 25, 25);
+}
+h2 {
+    font-size: 25px;
+    color: rgb(123, 123, 207);
+    text-align: center;
+}
+body {
+    font-size: 18px;
+    color: rgb(76, 76, 145);
+    text-align: center;
+}

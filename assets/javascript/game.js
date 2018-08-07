@@ -7,14 +7,23 @@ function lowrandomnumber() {
     return Math.floor(Math.random()*12 + 1) 
 
 }
-
-
-
 console.log(lowrandomnumber())
 
+//this is the counter of the user score
+
+var counter = 0;
+$(".Crystals").on("click", function() {
+
+  // Each time the user clicks the crystal the counter goes up by 1.
+  counter += 1;
+
+  // We then output the number of times the crystal is clicked.
+  alert("You clicked this crystal " + counter + " times!");
+
+});
 
 //trying to create a refresh button below...can i select an image and make that the button? 
-//git push origin masterhow does it display otherwise?
+//how does it display otherwise?
 function createRefreshButton()
 {
     var $btn = $('<button/>', {
