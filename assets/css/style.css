@@ -20,6 +20,20 @@
     text-align: center;
     padding-top: 15px;
     padding-right: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 25px;
     padding-left: 50px;
 }
+
+#targetnumber{
+    color: rgb(123, 123, 207);
+}
+
+#compileuserguesses{
+    color: rgb(123, 123, 207);
+}
+
+#resetbutton{
+    text-align: center;
+    padding-top: 15px;
+}
+

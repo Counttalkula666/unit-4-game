@@ -7,6 +7,7 @@
 
       <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
       <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <style>
       #crystals {
@@ -31,16 +32,13 @@
       <p>Game instructions go here.</p>
       </div>
     </div> 
-    <div id="numbertoguess">
-        <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+
+    <div id="targetnumber">
+        <h3>Number to Guess: <span id="number-to-guess"></span></h3>
     </div>
-
-  <div id="displaycomppick">
-    <!--display the random number the computer guesses here-->
-
-      </div>
      
-  <div id="compileuserguesses"> 
+  <div id="compileuserguesses">
+    <h3>Your Score: <span id="counter"></span></div></h3>
     <!--This is where the compiled user total will display and update-->
           
       </div>
@@ -54,7 +52,11 @@
       </div>
 
   <div id="displaywinorlose">
-    <!--This is where the win or lose alert will display after completeing the game-->
+    <!--This is where the win or lose counter will display after completeing the game-->
+      </div>
+
+      <div id='resetbutton'>
+      <button class="btn btn-primary btn-lg">Reset Game</button>
       </div>
 
 

@@ -1,3 +1,15 @@
+//what is this error on line one???
+
+var counter = 0;
+var targetnumber = 0;
+var wins = 0;
+var losses = 0;
+
+function compPick() {
+   return Math.floor(Math.random()*(120-19+1)+19) 
+};
+var targetnumber = compPick();
+document.getElementById('number-to-guess').innerHTML=targetnumber;
 
 $('#crystalOne').attr('data-number', lowrandomnumber());
 $('#crystalTwo').attr('data-number', lowrandomnumber());
@@ -5,6 +17,11 @@ $('#crystalThree').attr('data-number', lowrandomnumber());
 $('#crystalFour').attr('data-number', lowrandomnumber());
 
 $('.Crystals').on('click', function() {
+    
+    var crystalValue = ($(this).attr("data-number"));
+    crystalValue = parseInt(crystalValue);
+    counter += crystalValue;
+    document.getElementById("counter").innerHTML = counter;
     console.log('I work', $(this).attr('data-number'));
     
 });
@@ -18,22 +35,19 @@ function lowrandomnumber() {
 var targetNumber = function counter(){
 $("#number-to-guess").text(targetNumber);
 }
+//update wins before writing it
+//if(userguess ===targetnuber)
 
+//you win 
+//increase counter 
 
-//this is the counter of the user score
-//$(".Crystals").on("click", function() {
-  //var counter = 0;
-  // Each time the user clicks the crystal the counter needs to add that data !!!!
-  //counter += function lowrandomnumber()
-  // We then output the number of times the crystal is clicked.
- 
+//else // does not or goes over 
+//you lose 
+//
+//loss++
 
-//});
-
-//trying to create a refresh button below...can i select an image and make that the button? 
-//how does it display otherwise?
-function createRefreshButton()
-{
+//Have a refresh button function below...how do I link it to the button I created? 
+function createRefreshButton(){
     var $btn = $('<button/>', {
         text: 'Refresh Data',
         id: 'btn_refresh'
