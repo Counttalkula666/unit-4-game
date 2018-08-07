@@ -1,4 +1,10 @@
+#wholegame {
+    padding-top: %5
+}
 
+#gametext {
+    padding-top: 5%
+}
 
 #gametitle {
     font-size: 60px;
@@ -6,6 +12,7 @@
     text-align: center;
     line-height: 1.8;
     text-shadow: 2px 1px rgb(26, 25, 25);
+    padding-top: 20px;
 }
 #instructionsheader {
     font-size: 25px;
@@ -32,8 +39,18 @@
     color: rgb(123, 123, 207);
 }
 
+#wincounter{
+    color: rgb(123, 123, 207);
+}
+
+#losscounter{
+    color: rgb(123, 123, 207);
+}
+
+
 #resetbutton{
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 20px;
 }
 

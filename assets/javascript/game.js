@@ -35,24 +35,24 @@ function lowrandomnumber() {
 var targetNumber = function counter(){
 $("#number-to-guess").text(targetNumber);
 }
+
 //update wins before writing it
-//if(userguess ===targetnuber)
+if (counter === compPick) {
+    alert("You win!");
+  }
+//increase counter
+else if (counter >= compPick) {
+    alert("You lose!!");
+  }
+//increase counter
 
-//you win 
-//increase counter 
-
-//else // does not or goes over 
-//you lose 
-//
-//loss++
-
-//Have a refresh button function below...how do I link it to the button I created? 
+//Have a refresh button function below...need to link it to the button I created
 function createRefreshButton(){
     var $btn = $('<button/>', {
         text: 'Refresh Data',
         id: 'btn_refresh'
     });
-    $($btn).on('click', function () {
+    $('.btn btn-primary btn-lg').on('click', function () {
         ClickRefresh()
     });
     return $btn;
